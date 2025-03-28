@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cine - Compra de Boletos</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Compra de Boletos</h1>
+    <form action="/comprar" method="POST">
+        <div>
+            <label>Película:</label>
+            <input type="text" name="pelicula" required>
+        </div>
+        
+        <div>
+            <label>Sala:</label>
+            <select name="sala" required>
+                <option value="Sala 1">Sala 1</option>
+                <option value="Sala 2">Sala 2</option>
+                <option value="Sala 3">Sala 3</option>
+            </select>
+        </div>
+        
+        <div>
+            <label>Horario:</label>
+            <input type="time" name="horario" required>
+        </div>
+        
+        <div>
+            <label>Fecha:</label>
+            <input type="date" name="fecha" required>
+        </div>
+        
+        <button type="submit">Comprar Boleto</button>
+    </form>
+</body>
+</html>
